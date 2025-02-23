@@ -5,7 +5,7 @@ You can have separate colors for the path and the filter and also customize the 
 
 ## Requirements
 
-- [yazi](https://github.com/sxyazi/yazi) version >= 0.4.0
+- [yazi](https://github.com/sxyazi/yazi) version >= 25.2.7
 - [yatline.yazi](https://github.com/imsi32/yatline.yazi)
 
 ## Installation
