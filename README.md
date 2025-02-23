@@ -1,7 +1,7 @@
 # yatline-tab-path.yazi
 
-An addon for [yatline.yazi](https://github.com/imsi32/yatline.yazi) to allow colorizing the `tab-path` section.
-You can have separate colors for the path and the filter and also customize the filter labels.
+An addon for [yatline.yazi](https://github.com/imsi32/yatline.yazi) to allow colorizing the `tab_path` section.
+You can have separate colors for the path and for the filter and also customize the filter labels.
 
 ## Requirements
 
