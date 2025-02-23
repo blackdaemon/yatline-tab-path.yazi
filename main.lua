@@ -10,7 +10,7 @@ local function setup(_, options)
     local default_search_label = " search"
     local default_filter_label = " filter"
     local default_no_filter_label = ""
-    local default_flatten_label = " flatten"
+    local default_flatten_label = "  flatten"
     local default_separator = "  "
 	local config = {
         path_fg = options.path_fg or default_path_fg,
