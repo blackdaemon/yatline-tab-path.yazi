@@ -44,8 +44,8 @@ Then, add it in one of your sections in the yatline configuration using:
 ```
 
 NOTE:
-    It differs from the default `tab_path` provided by `yatline.yazi` in that it is of type
-    `coloreds` and not `string`.
+    It differs from the default `tab_path` provided by `yatline.yazi` in that it's of type
+    `coloreds` instead of `string`.
 
 ## Credits
 
