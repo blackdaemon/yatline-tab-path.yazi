@@ -27,13 +27,13 @@ require("yatline-tab-path"):setup()
 Overriding the default settings:
 ```lua
 require("yatline-tab-path"):setup({
-        path_fg = "brightwhite", 
-        filter_fg = "brightyellow", 
-        search_label = "search", 
-        filter_label = "filter", 
-        flatten_label = "flatten", 
-        no_filter_label = "no filter",
-        separator = ", ",
+    path_fg = "cyan",
+    filter_fg = "brightyellow",
+    search_label = " search",
+    filter_label = " filter",
+    no_filter_label = "",
+    flatten_label = " flatten",
+    separator = "  ",
 })
 ```
 
