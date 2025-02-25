@@ -7,10 +7,10 @@ local function setup(_, options)
 
     local default_path_fg = "cyan"
     local default_filter_fg = "brightyellow"
-    local default_search_label = " search"
-    local default_filter_label = " filter"
+    local default_search_label = "  search"
+    local default_filter_label = "  filter"
     local default_no_filter_label = ""
-    local default_flatten_label = "  flatten"
+    local default_flatten_label = "   flatten"
     local default_separator = "  "
 	local config = {
         path_fg = options.path_fg or default_path_fg,
@@ -73,9 +73,18 @@ local function setup(_, options)
             path = trim_filename(path, max_length, trim_length)
         end
 
+	if path == "" and filter_suffix == "" then
+		return {}
+	end
+
+	local spacing = " "
+	local spacing_fg = ""
         return {
-            { string.format(" %s ", path), config.path_fg },
-            { string.format("  %s ", filter_suffix), config.filter_fg },
+	    { spacing, spacing_fg },
+            { string.format("%s", path), config.path_fg },
+	    { filter_suffix ~= "" and spacing or "", spacing_fg },
+            { string.format("%s", filter_suffix), config.filter_fg },
+	    { spacing, spacing_fg },
         }
     end
 end
